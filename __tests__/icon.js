@@ -21,7 +21,7 @@ describe('Icon', () => {
   });
 
   it('accepts a "title" property', async () => {
-    expect(icon.attributes()['aria-label']).toEqual('Android icon');
+    expect(icon.attributes()['aria-label']).toBeUndefined();
 
     await icon.setProps({ title: 'foo' });
 
